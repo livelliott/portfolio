@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Pro", sans-serif;
+    transform: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF9F9;
+}
+
+section {
+    height: 100vh; /* takes up full amount of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory; /* snap to next page when scroll */
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+.text {
+    color: #505050;
+    position: relative;
+    letter-spacing: 0.015em;
+}
+
+.name {
+    font-family: "Sofia Pro 300", sans-serif;
+    left: 150px;
+    top: 300px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.subhead {
+    left: 150px;
+    top: 315px;
+    font-weight: bold;
+    font-size: 25px;
+}
