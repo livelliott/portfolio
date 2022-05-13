@@ -21,14 +21,14 @@
 .name {
     font-family: "Sofia Pro 300", sans-serif;
     left: 210px;
-    top: 40%;
+    top: 42%;
     font-weight: bold;
     font-size: 50px;
 }
 
 .subhead {
     left: 210px;
-    top: 52%;
+    top: 54%;
     font-weight: bold;
     font-size: 25px;
 }
@@ -69,6 +69,12 @@
     left: 26%;
 }
 
+.yell-tri-1 {
+    position: absolute;
+    right: 24%;
+    top: 13%;
+}
+
 .yell-tri-2 {
     position: absolute;
     left: 22%;
@@ -77,13 +83,31 @@
 
 .sml-blue-sqr {
     position: absolute;
-    top: 34%;
-    right: 36%;
+    top: 38%;
+    right: 37%;
 }
 
 .sml-blue-sqr-1 {
     position: absolute;
     top: 34%;
-    left: 6%;
+    left: 7%;
 }
 
+.sml-blue-sqr-2 {
+    position: absolute;
+    bottom: 6%;
+    left: 53%;
+}
+
+.blue-pie-circ {
+    position: absolute;
+    top: 17%;
+    right: 2%;
+
+}
+
+.pink-tri {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+}
