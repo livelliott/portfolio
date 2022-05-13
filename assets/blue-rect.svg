@@ -1,8 +1,7 @@
-<svg width="912" height="956" viewBox="0 0 912 956" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="22" y="515.195" width="539.472" height="707.693" transform="rotate(-51.5 22 515.195)" fill="url(#paint0_linear_21_3)"/>
-<rect x="8.43074" y="421.235" width="527.472" height="695.693" transform="rotate(-51.5 8.43074 421.235)" stroke="#F7D377" stroke-width="12"/>
+<svg width="890" height="863" viewBox="0 0 890 863" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="422.195" width="539.472" height="707.693" transform="rotate(-51.5 0 422.195)" fill="url(#paint0_linear_27_5)"/>
 <defs>
-<linearGradient id="paint0_linear_21_3" x1="291.736" y1="515.195" x2="291.736" y2="1222.89" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_27_5" x1="269.736" y1="422.195" x2="269.736" y2="1129.89" gradientUnits="userSpaceOnUse">
 <stop offset="0.213542" stop-color="#AFD8D5"/>
 <stop offset="1" stop-color="#7FD2CD"/>
 </linearGradient>

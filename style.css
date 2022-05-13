@@ -35,26 +35,50 @@
 
 .blue-rect {
     position: absolute;
-    top: 250px;
-    left: -320px;
+    bottom: -22%;
+    left: -27%;
+}
+
+.o-blue-rect {
+    position: absolute;
+    bottom: -15%;
+    left: -30%;
 }
 
 .sml-pink-circ {
     position: absolute;
-    top: -45px;
-    left: -30px;
+    top: -8%;
+    left: -3%;
+}
+
+.o-sml-pink-circ {
+    position: absolute;
+    top: -4%;
+    left: 11.75%;
 }
 
 .lrg-pink-circ {
     position: absolute;
-    top: 450px;
+    bottom: -40%;
     right: -10%;
+}
+
+.o-lrg-pink-circ {
+    position: absolute;
+    bottom: -14%;
+    right: -11.5%;
 }
 
 .blue-tri {
     position: absolute;
     top: -102px;
     left: 30%;
+}
+
+.o-blue-tri {
+    position: absolute;
+    top: -3%;
+    left: 36%;
 }
 
 .two-pink-circ {
@@ -96,18 +120,29 @@
 .sml-blue-sqr-2 {
     position: absolute;
     bottom: 6%;
-    left: 53%;
-}
-
-.blue-pie-circ {
-    position: absolute;
-    top: 17%;
-    right: 2%;
-
+    right: 40%;
 }
 
 .pink-tri {
     position: absolute;
     bottom: 24%;
+    left: 43%;
+}
+
+.sml-blue-rect {
+    position: absolute;
+    right: -40%;
+    top: 3%;
+}
+
+.o-sml-blue-rect {
+    position: absolute;
+    right: -37%;
+    top: 1%;
+}
+
+.test {
+    position: absolute;
+    bottom: -100%;
     left: 43%;
 }
