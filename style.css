@@ -5,11 +5,6 @@
     font-family: "Sofia Pro", sans-serif;
 }
 
-body {
-    background: #FFF9F9;
-    width: 100vh;
-}
-
 
 .text {
     color: #505050;
@@ -17,17 +12,23 @@ body {
     letter-spacing: 0.085em;
 }
 
+.landing-page {
+    height: 100vh;
+    width: 100vw;
+    background: #FFF9F9;
+}
+
 .name {
     font-family: "Sofia Pro 300", sans-serif;
     left: 210px;
-    top: 280px;
+    top: 40%;
     font-weight: bold;
     font-size: 50px;
 }
 
 .subhead {
     left: 210px;
-    top: 355px;
+    top: 52%;
     font-weight: bold;
     font-size: 25px;
 }
@@ -47,8 +48,42 @@ body {
 .lrg-pink-circ {
     position: absolute;
     top: 450px;
-    right: -100px;
-
+    right: -10%;
 }
 
+.blue-tri {
+    position: absolute;
+    top: -102px;
+    left: 30%;
+}
+
+.two-pink-circ {
+    position: absolute;
+    top: 10%;
+    right: 45%;
+}
+
+.three-yell-circ {
+    position: absolute;
+    bottom: 8%;
+    left: 26%;
+}
+
+.yell-tri-2 {
+    position: absolute;
+    left: 22%;
+    top: 18%;
+}
+
+.sml-blue-sqr {
+    position: absolute;
+    top: 34%;
+    right: 36%;
+}
+
+.sml-blue-sqr-1 {
+    position: absolute;
+    top: 34%;
+    left: 6%;
+}
 
