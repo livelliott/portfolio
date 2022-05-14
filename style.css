@@ -5,6 +5,9 @@
     font-family: "Sofia Pro", sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
 
 .text {
     color: #505050;
@@ -14,6 +17,7 @@
 
 .landing-page {
     height: 100vh;
+    min-width: 1280px;
     width: 100vw;
     background: #FFF9F9;
 }
@@ -103,6 +107,7 @@
     position: absolute;
     left: 22%;
     top: 18%;
+    animation: circle2 120s linear infinite;
 }
 
 .sml-blue-sqr {
@@ -127,6 +132,7 @@
     position: absolute;
     bottom: 24%;
     left: 43%;
+    animation: circle1 220s linear infinite;
 }
 
 .sml-blue-rect {
@@ -145,4 +151,25 @@
     position: absolute;
     bottom: -100%;
     left: 43%;
+}
+
+
+@keyframes circle1 {
+    /* for small shapes */
+    from{
+        transform: rotate(0deg) translate(14px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(14px) rotate(360deg);
+    }
+}
+
+@keyframes circle2 {
+    /* for small shapes */
+    from{
+        transform: rotate(0deg) translate(20px) rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg) translate(20px) rotate(-360deg);
+    }
 }
