@@ -3,8 +3,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --hover-colour: rgb(251, 85, 112);
+}
+
 body {
     font-family: "Karla", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .temp-logo {
@@ -21,8 +30,8 @@ body {
 }
 
 .name {
-    font-size: 1.5em;
-    padding: 0;
+    font-size: 2em;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .push-right {
@@ -36,13 +45,9 @@ body {
 }
 
 .nav-link:hover {
-    color: rgb(251, 85, 112);
-}
-
-.container {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
+    transition: color .2s ease-in;
+    transition: color .2s ease-out;
+    color: var(--hover-colour);
 }
 
 .elm {
@@ -51,4 +56,21 @@ body {
 
 .elm + .elm {
     margin-left: 2em;    
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.burger div {
+    width: 1.6em;
+    height: 0.15em;
+    background-color: black;
+    margin: 0.3em 0 0.3em 0;
+    transition: all 0.3s ease;
+}
+
+.burger:hover div {
+    background-color: var(--hover-colour);
 }
