@@ -27,7 +27,7 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
-    margin-right: auto;
+    margin: auto;
     justify-content: space-between;
     border-bottom: 0.3em solid black;
 }
@@ -83,7 +83,7 @@ body {
 
 @media screen and (max-width: 700px) {
     body {
-        overflow-y: hidden;
+        overflow: hidden;
     }
 
     .logo {
@@ -96,19 +96,18 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80%;
+        align-items: center;
+        width: 78%;
         top: 6em;
-        padding-bottom: 0.7em;
+        padding-bottom: 0.8em;
         border-bottom: 0.3em solid black;
         line-height: 2em;
-        /* transform: translateY(-160%);
-        transition: transform 0.4s ease-in-out; */
-        opacity: 0
-    }
-/* 
-    .links li {
         opacity: 0;
-    } */
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
 
     .burger {
         display: block;
@@ -116,18 +115,13 @@ body {
 
     /* when active, fade in */
     .nav-active {
-        animation: fadeIn var(--bezier) 0.5s forwards; 
+        animation: fadeIn var(--bezier) 0.5s forwards;
     }
 
     /* when inactive, fade out */
     .nav-inactive {
         animation: fadeOut var(--bezier) 0.3s forwards; 
     }
-}
-
-/* shows nav when bar is activated */
-.nav-active {
-    transform: translateY(0%);
 }
 
 /* toggle burger bar */
@@ -144,13 +138,12 @@ body {
 }
 
 
-
 @keyframes fadeIn {
     0% { 
         opacity: 0;
-        transform: translateY(-100%);
+        transform: translateY(-50%);
     }
-    55% { 
+    45% { 
         opacity: 0; 
     }
     100% { 

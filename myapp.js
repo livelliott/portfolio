@@ -5,9 +5,8 @@ const navSlide = () => {
 
     // when burger is clicked 
     burger.addEventListener('click', ()=>{
+        
         // active nav bar
-        // nav.classList.toggle('nav-active');
-
         if (nav.classList.contains('nav-inactive')) {
             nav.classList.remove('nav-inactive');
             nav.classList.add('nav-active');
@@ -20,8 +19,8 @@ const navSlide = () => {
 
         // burger animation: when we click on the burger -> form an X shape
         burger.classList.toggle('toggle'); 
-
     });
 }
+
 
 navSlide();
