@@ -4,8 +4,9 @@
 }
 
 :root {
-    --hover-colour: rgb(251, 85, 112);
+    --hover-colour: #935555;
     --bezier: cubic-bezier(.5,.24,.5,.94);
+    --bezier-flower: cubic-bezier(.08,.37,.39,.3);
 }
 
 body {
@@ -26,8 +27,18 @@ body {
 .flw-logo {
     opacity: 1;
     margin-right: 0.5em;
+    transition: transform var(--bezier-flower) 5s;
 }
 
+.flw-logo:hover {
+    transform: rotate(100deg);
+}
+
+.flw-logo:hover #flw-logo-fill {
+    transition: fill .2s ease-in;
+    fill: #eaafaf;
+
+}
 
 .nav {
     display: flex;
