@@ -23,6 +23,12 @@ body {
     margin-right: 0.8em;
 }
 
+.flw-logo {
+    opacity: 1;
+    margin-right: 0.5em;
+}
+
+
 .nav {
     display: flex;
     list-style: none;
@@ -37,15 +43,16 @@ body {
     align-items: center;
     justify-content: flex-start;
 }
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .name {
     font-size: 2em;
     margin: 0.5em 0 0.5em 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .nav-link {
@@ -103,6 +110,7 @@ body {
         border-bottom: 0.3em solid black;
         line-height: 2em;
         opacity: 0;
+        background-color: white;
     }
 
     .nav-link {
