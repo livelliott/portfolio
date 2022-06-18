@@ -41,6 +41,7 @@ body {
 }
 
 .nav {
+    position: sticky;
     display: flex;
     list-style: none;
     align-items: center;
@@ -60,27 +61,17 @@ body {
     margin: 0.5em 0 0.5em 0;
 }
 
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .nav-link {
     cursor: pointer;
     color: black;
     font-size: 1.3rem;
     text-decoration: none;
-    margin-left: 1.4em;
 }
 
 .nav-link:hover {
     transition: color .2s ease-in;
     color: var(--hover-colour);
-}
-
-.elm {
-    text-decoration: none;
 }
 
 .burger {
@@ -100,49 +91,41 @@ body {
     background-color: var(--hover-colour);
 }
 
-@media screen and (max-width: 700px) {
-    body {
-        overflow: hidden;
-    }
 
-    .logo {
-        justify-content: center;
-    }
-
-    .links {
-        z-index: -10px;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 78%;
-        top: 6em;
-        padding-bottom: 0.8em;
-        border-bottom: 0.3em solid black;
-        line-height: 2em;
-        opacity: 0;
-        background-color: white;
-    }
-
-    .nav-link {
-        margin-left: 0;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    /* when active, fade in */
-    .nav-active {
-        animation: fadeIn var(--bezier) 0.5s forwards;
-    }
-
-    /* when inactive, fade out */
-    .nav-inactive {
-        animation: fadeOut var(--bezier) 0.3s forwards; 
-    }
+.logo {
+    justify-content: center;
 }
+
+.links {
+    z-index: -10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 6em;
+    padding-bottom: 1.2em;
+    border-bottom: 0.3em solid black;
+    line-height: 2.5em;
+    opacity: 0;
+    background-color: white;
+}
+
+.burger {
+    display: block;
+}
+
+/* when active, fade in */
+.nav-active {
+    animation: fadeIn var(--bezier) 0.5s forwards;
+}
+
+/* when inactive, fade out */
+.nav-inactive {
+    animation: fadeOut var(--bezier) 0.3s forwards; 
+}
+
 
 /* toggle burger bar */
 .toggle .line1{
@@ -185,3 +168,4 @@ body {
         transform: translateY(-35%);
     }
 }
+
