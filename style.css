@@ -159,7 +159,6 @@ body {
 
 .front-page {
     z-index: 1;
-    border: 1px solid red;
     position: relative;
     height: 90vh;
     /* padding: 12em 0 9em 0;  */
@@ -212,6 +211,26 @@ body {
 }
 
 .flw-s-b:hover #flw-b-fill {
+    transition: fill .2s linear;
     fill: var(--blue-fill-2);
 }
 
+@media screen and (max-width: 780px) {
+    
+    .front-page h2 {
+        font-size: 3.5rem;
+    }
+
+    .front-page p {
+        font-size: 1.5rem;
+    }
+
+    .flw-l-p {
+        width: 6em;
+        height: 6em;
+        top: 12%;
+        right: 10%;
+    }
+
+    
+}
