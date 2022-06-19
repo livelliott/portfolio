@@ -7,6 +7,8 @@
     --hover-colour: #935555;
     --bezier: cubic-bezier(.5,.24,.5,.94);
     --bezier-flower: cubic-bezier(.08,.37,.39,.3);
+    --pink-fill-1: #FFD5D5;
+    --pink-fill-2: #eaafaf;
 }
 
 body {
@@ -24,18 +26,23 @@ body {
     transition: transform var(--bezier-flower) 5s;
 }
 
+#flw-logo-fill {
+    fill: var(--pink-fill-1);
+}
+
 .flw-logo:hover {
     transform: rotate(100deg);
 }
 
 .flw-logo:hover #flw-logo-fill {
     transition: fill .2s ease-in;
-    fill: #eaafaf;
+    fill: var(--pink-fill-2);
 
 }
 
 .nav {
-    position: sticky;
+    z-index: 10;
+    position: relative;
     display: flex;
     list-style: none;
     align-items: center;
@@ -80,7 +87,6 @@ body {
 }
 
 .links {
-    z-index: -10px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -151,8 +157,16 @@ body {
 
 
 .front-page {
-    height: 85vh;
-    padding: 12em 0 9em 0; 
+    z-index: 1;
+    border: 1px solid red;
+    position: relative;
+    height: 90vh;
+    /* padding: 12em 0 9em 0;  */
+}
+
+.main-txt {
+    position: absolute;
+    top: 37%;
 }
 
 .front-page h2 {
@@ -161,11 +175,19 @@ body {
 }
 
 .front-page p {
-    font-weight: s00;
     font-size: 2rem;
     margin: 0;
 }
 
 .flw-l-p {
+    fill: var(--pink-fill-1);
     position: absolute;
+    top: 15%;
+    right: 18%;
 }
+
+.flw-l-p:hover #flw-fill {
+    fill: aqua;
+   ;
+}
+
