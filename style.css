@@ -6,9 +6,11 @@
 :root {
     --hover-colour: #935555;
     --bezier: cubic-bezier(.5,.24,.5,.94);
-    --bezier-flower: cubic-bezier(.08,.37,.39,.3);
+    --bezier-flower: cubic-bezier(.01,.58,.54,.5);
     --pink-fill-1: #FFD5D5;
     --pink-fill-2: #eaafaf;
+    --blue-fill-1: #C7EBF3;
+    --blue-fill-2: #88ccdb;
 }
 
 body {
@@ -21,7 +23,6 @@ body {
 }
 
 .flw-logo {
-    opacity: 1;
     margin-right: 0.5em;
     transition: transform var(--bezier-flower) 5s;
 }
@@ -184,10 +185,33 @@ body {
     position: absolute;
     top: 15%;
     right: 18%;
+    transition: transform var(--bezier-flower) 5s;
+}
+
+.flw-l-p:hover {
+    transform: rotate(-80deg);
+    
 }
 
 .flw-l-p:hover #flw-fill {
-    fill: aqua;
-   ;
+    transition: fill .2s linear;
+    fill: var(--pink-fill-2);
+    
+}
+
+.flw-s-b {
+    position: absolute;
+    fill: var(--blue-fill-1);
+    bottom: 20%;
+    left: 40%;
+    transition: transform var(--bezier-flower) 5s;
+}
+
+.flw-s-b:hover {
+    transform: rotate(100deg);
+}
+
+.flw-s-b:hover #flw-b-fill {
+    fill: var(--blue-fill-2);
 }
 
