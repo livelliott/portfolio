@@ -1,0 +1,9 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #ff886a, #fcf6cf);
+   }
