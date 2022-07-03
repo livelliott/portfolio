@@ -3,7 +3,19 @@
     box-sizing: border-box;
 }
 
-body {
+body{
+    background-image:-webkit-linear-gradient(60deg, #75AEF5, #8C69FC);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+}
+
+/* .front-page {
     height: 100vh;
     background-image: linear-gradient(to bottom right, #ff886a, #fcf6cf);
-   }
+   } */
