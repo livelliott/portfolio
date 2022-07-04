@@ -33,6 +33,7 @@ body {
 
 .front-page {
     padding-top: 2em;
+    padding-bottom: 30em;
 }
 
 .nav-container {
@@ -42,13 +43,19 @@ body {
     background-color: var(--test-colour);
 }
 
+nav {
+    position: fixed;
+    background-color: pink;
+    width: 100%;
+}
+
 .navbar {
-    /* width: 90%; */
     margin: 0 auto;
     display: grid;
     grid-template-columns: .2fr auto 1fr;
     align-items: center;
     max-width: 1720px;
+    transition: top 0.2s;
 }
 
 #navbar-logo {
@@ -105,7 +112,8 @@ body {
         grid-template-columns: auto;
         background: magenta;
         margin: 0;
-        width: 100%;
+        width: 40%;
+        height: 100vh;
         position: absolute;
         top: 6.2em;
         right: -100%;
@@ -115,7 +123,7 @@ body {
 
     .nav-menu.active {
         background-color: brown;
-        left: 0;
+        right: 0%;
         opacity: 1;
         transition: all 0.5 ease;
     }
@@ -140,12 +148,12 @@ body {
         position: absolute;
         top: 20%;
         right: 5%;
-        /* transform: translate(5%, 20%); */
     }
 
     .menu-toggle .bar {
         display: block;
         cursor: pointer;
+        transition: all 0.2s ease;
     }
 
     .menu-toggle:hover {
