@@ -124,7 +124,8 @@ nav {
     }
 
     .nav-menu.active {
-        background-color: brown;
+        background-color: rgba(144, 112, 249, 0.8);
+        backdrop-filter: blur(3px);
         right: 0%;
         opacity: 1;
         transition: all 0.5 ease;
