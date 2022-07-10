@@ -7,7 +7,8 @@
 
 :root {
     --test-colour: purple; 
-    --white: #fff;
+    --white: rgba(255, 255, 255, 1);
+    --button-colour: rgba(113, 76, 221, 1);
 }
 
 body{
@@ -29,6 +30,7 @@ body {
 .container {
     width: 70%;
     margin: 0 auto;
+    transition: all 0.5s ease;
 }
 
 .front-page {
@@ -40,15 +42,16 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     width: 100%;
-    background-color: var(--test-colour);
 }
 
 nav {
     position: fixed;
     background-color: rgba(144, 112, 249, 0.8);
+    content: "";
     backdrop-filter: blur(3px);
     width: 100%;
 }
+
 
 .navbar {
     margin: 0 auto;
@@ -56,7 +59,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     max-width: 1720px;
-    transition: top 0.4s;
+    transition: top 0.3s;
 }
 
 #navbar-logo {
@@ -73,7 +76,7 @@ nav {
     justify-content: space-between;
     list-style: none;
     text-align: center;
-    width: 50%;
+    width: 40%;
 }
 
 .nav-links {
@@ -88,10 +91,15 @@ nav {
 
 .nav-links-btn {
     text-decoration: none;
-    background-color: greenyellow;
+    background-color: var(--button-colour);
     padding: 0.4em 0.9em;
     border-radius: 0.5em;
     margin-right: 2.5rem;
+    color: var(--white);
+}
+
+.no-blur {
+    backdrop-filter: blur(0px);
 }
 
 @media screen and (max-width: 830px) {
@@ -110,39 +118,46 @@ nav {
     }
 
     .nav-menu {
-        display: grid;
-        grid-template-columns: auto;
-        background: magenta;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        line-height: 1em;
+        background-color: rgba(144, 112, 249, 0.8);
         margin: 0;
-        width: 40%;
+        width: 30%;
         height: 100vh;
         position: absolute;
-        top: 4em;
+        top: 3.98em;
         right: -100%;
         opacity: 0;
         transition: all 0.5s ease;
     }
 
     .nav-menu.active {
-        background-color: rgba(144, 112, 249, 0.8);
-        backdrop-filter: blur(3px);
         right: 0%;
         opacity: 1;
         transition: all 0.5 ease;
     }
 
     .nav-links {
+        margin-top: 2em;
         text-align: center;
         line-height: 2em;
         width: 100%;
         display: table;
     }
 
+    .last {
+        margin-bottom: 2.5em;
+    }
+
     .nav-links-btn {
-        color: white;
-        border: none;
-        padding: 0;
-        border-radius: 0;
+        color: var(--white);
+        /* background-color: transparent; */
+        /* border: none; */
+        /* padding: 0; */
+        /* border-radius: 0; */
         transition: all 0.5s ease;
     }
 
