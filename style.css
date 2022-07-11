@@ -8,7 +8,10 @@
 :root {
     --test-colour: purple; 
     --white: rgba(255, 255, 255, 1);
-    --button-colour: rgba(113, 76, 221, 1);
+    --button-colour: rgb(209, 194, 255);
+    --button-txt: #4C55AD;
+    --light-blue: #BED8FF;
+
 }
 
 body{
@@ -16,7 +19,7 @@ body{
 }
 
 body { 
-    background-image:-webkit-linear-gradient(60deg, #75AEF5, #8C69FC);
+    background-image:-webkit-linear-gradient(100deg, #8cc2f5, #7e5bf0);
     background-position: center 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,7 +31,8 @@ body {
 }
 
 .container {
-    width: 70%;
+    z-index: 0;
+    width: 80%;
     margin: 0 auto;
     transition: all 0.5s ease;
 }
@@ -45,6 +49,7 @@ body {
 }
 
 nav {
+    z-index: 1;
     position: fixed;
     background-color: rgba(144, 112, 249, 0.8);
     content: "";
@@ -94,15 +99,39 @@ nav {
     background-color: var(--button-colour);
     padding: 0.4em 0.9em;
     border-radius: 0.5em;
-    margin-right: 2.5rem;
-    color: var(--white);
+    margin-right: 6rem;
+    color: var(--button-txt);
 }
 
 .no-blur {
     backdrop-filter: blur(0px);
 }
 
-@media screen and (max-width: 830px) {
+.main-txt {
+    position: relative;
+}
+
+.greeting {
+    margin-top: 3em;
+    font-family: 'Courier', sans-serif;
+    font-size: 3rem;
+    color: var(--light-blue);
+}
+
+.name {
+    font-size: 10rem;
+    font-weight: bold;
+    color: var(--white);
+    line-height: 1em;
+}
+
+.slogan {
+    color: var(--light-blue);
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 890px) {
 
     .menu-toggle .bar {
         width: 2em;
@@ -140,6 +169,10 @@ nav {
         transition: all 0.5 ease;
     }
 
+    #navbar-logo {
+        margin-left: 1em;
+    }
+
     .nav-links {
         margin-top: 2em;
         text-align: center;
@@ -153,11 +186,8 @@ nav {
     }
 
     .nav-links-btn {
-        color: var(--white);
-        /* background-color: transparent; */
-        /* border: none; */
-        /* padding: 0; */
-        /* border-radius: 0; */
+        color: var(--button-txt);
+
         transition: all 0.5s ease;
     }
 
@@ -189,8 +219,20 @@ nav {
         transform: translateY(-9.5px) rotate(-45deg);
     }
 
-
     .nav-links-btn {
         margin-right: 0;
+    }
+
+    .greeting {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 5.5rem;
+        line-height: 1.3em;
+    }
+
+    .slogan {
+        font-size: 2.5rem;
     }
 }
