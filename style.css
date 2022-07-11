@@ -99,7 +99,7 @@ nav {
     background-color: var(--button-colour);
     padding: 0.4em 0.9em;
     border-radius: 0.5em;
-    margin-right: 6rem;
+    margin-right: 2.5rem;
     color: var(--button-txt);
 }
 
@@ -129,6 +129,39 @@ nav {
     color: var(--light-blue);
     font-weight: bold;
     font-size: 3.5rem;
+}
+
+.logos {
+    margin-top: 1em;
+    display: flex;
+    gap: 2em;
+}
+
+.logo-email {
+    fill: var(--white);
+}
+
+.logo-email:hover {
+    fill: var(--light-blue);
+    transition: all 0.3s ease-out;
+}
+
+.logo-github {
+    fill: var(--white);
+}
+
+.logo-github:hover {
+    fill: var(--light-blue);
+    transition: all 0.3s ease-out;
+}
+
+.logo-linkedin {
+    fill: var(--white);
+}
+
+.logo-linkedin:hover {
+    fill: var(--light-blue);
+    transition: all 0.3s ease-out;
 }
 
 @media screen and (max-width: 890px) {
