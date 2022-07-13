@@ -8,6 +8,7 @@
 :root {
     --test-colour: purple; 
     --white: rgba(255, 255, 255, 1);
+    --backing-colour: rgba(135, 101, 245, 0.8);
     --button-colour: rgb(209, 194, 255);
     --button-txt: #4C55AD;
     --light-blue: #BED8FF;
@@ -39,19 +40,20 @@ body {
 
 .front-page {
     padding-top: 2em;
-    padding-bottom: 70em;
+    height: 100vh;
 }
 
 .nav-container {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     width: 100%;
+    letter-spacing: 0.1em;
 }
 
 nav {
     z-index: 1;
     position: fixed;
-    background-color: rgba(144, 112, 249, 0.8);
+    background-color: var(--backing-colour);
     content: "";
     backdrop-filter: blur(3px);
     width: 100%;
@@ -119,7 +121,7 @@ nav {
 }
 
 .name {
-    font-size: 10rem;
+    font-size: 9.9rem;
     font-weight: bold;
     color: var(--white);
     line-height: 1em;
@@ -157,11 +159,71 @@ nav {
 
 .logo-linkedin {
     fill: var(--white);
+    width: 5em;
 }
 
 .logo-linkedin:hover {
+    transition: fill 0.3s ease;
     fill: var(--light-blue);
-    transition: all 0.3s ease-out;
+    
+}
+
+.subtitle {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 3em;
+    margin-bottom: 1.5rem;
+}
+
+.txt {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.sub-head {
+    font-size: 2rem;
+    color: var(--white);
+    font-family: 'Courier', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+
+.box {
+    background-color: var(--backing-colour);
+    padding: 3em;
+    align-items: center;
+    border-radius: 2em;
+}
+
+.head-shot {
+    width: 35%;
+    height: 35%;
+    min-width: 10em;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.tech-box {
+    margin-top: 2.5rem;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.date {
+    font-size: 1.3em;
+}
+
+.worked-box {
+    margin-top: 2.5rem
 }
 
 @media screen and (max-width: 890px) {
@@ -185,7 +247,7 @@ nav {
         align-items: center;
         justify-content: flex-start;
         line-height: 1em;
-        background-color: rgba(144, 112, 249, 0.8);
+        background-color: var(--backing-colour);
         margin: 0;
         width: 30%;
         height: 100vh;
@@ -267,5 +329,21 @@ nav {
 
     .slogan {
         font-size: 2.5rem;
+    }
+
+    .subtitle {
+        margin-top: 0em;
+    }
+
+    .about-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .technologies {
+        flex-direction: column;
+        gap: 0;
     }
 }
