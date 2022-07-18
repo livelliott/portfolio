@@ -8,7 +8,8 @@
 :root {
     --test-colour: purple; 
     --white: rgba(255, 255, 255, 1);
-    --backing-colour: rgba(135, 101, 245, 0.8);
+    --nav-bg-colour: rgba(135, 101, 245, 0.8);
+    --backing-colour: rgba(135, 101, 245, 0.35);
     --button-colour: rgb(209, 194, 255);
     --button-txt: #4C55AD;
     --light-blue: #BED8FF;
@@ -53,7 +54,7 @@ body {
 nav {
     z-index: 1;
     position: fixed;
-    background-color: var(--backing-colour);
+    background-color: var(--nav-bg-colour);
     content: "";
     backdrop-filter: blur(3px);
     width: 100%;
@@ -114,7 +115,7 @@ nav {
 }
 
 .greeting {
-    margin-top: 3em;
+    margin-top: 3.2em;
     font-family: 'Courier', sans-serif;
     font-size: 3rem;
     color: var(--light-blue);
@@ -173,7 +174,7 @@ nav {
     font-weight: bold;
     font-size: 3rem;
     margin-top: 3em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
 }
 
 .txt {
@@ -226,6 +227,39 @@ nav {
     margin-top: 2.5rem
 }
 
+.space-img {
+    border-radius: 1.5em;
+    width: 50%;
+    min-width: 20em;
+}
+
+.space-cat-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.tools {
+    display: flex;
+    gap: 1.25em;
+    align-items: center;
+}
+
+.tool {
+    color: var(--button-colour);
+    font-size: 1.25rem;
+    border-radius: 0.5em;
+    background-color: var(--button-txt);
+    padding: 0.5em 1em;
+}
+
+.space-github {
+    fill: var(--button-txt);
+}
+
+
+
 @media screen and (max-width: 890px) {
 
     .menu-toggle .bar {
@@ -247,13 +281,13 @@ nav {
         align-items: center;
         justify-content: flex-start;
         line-height: 1em;
-        background-color: var(--backing-colour);
+        background-color: var(--nav-bg-colour);
         margin: 0;
         width: 30%;
-        height: 100vh;
+        height: 120vh;
         position: absolute;
         top: 3.98em;
-        right: -100%;
+        right: -80%;
         opacity: 0;
         transition: all 0.5s ease;
     }
@@ -295,7 +329,7 @@ nav {
     .menu-toggle .bar {
         display: block;
         cursor: pointer;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease;
     }
 
     .menu-toggle:hover {
