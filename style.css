@@ -173,7 +173,7 @@ nav {
     color: var(--white);
     font-weight: bold;
     font-size: 3rem;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 1.7rem;
 }
 
@@ -255,7 +255,10 @@ nav {
 }
 
 .space-github {
+    width: 3em;
+    height: 3em;
     fill: var(--button-txt);
+
 }
 
 
@@ -366,7 +369,7 @@ nav {
     }
 
     .subtitle {
-        margin-top: 0em;
+        font-size: 2rem;
     }
 
     .about-box {
@@ -394,6 +397,15 @@ nav {
         gap: 3em;
     }
 
+    .space-img {
+        min-width: 18em;
+    }
+
+    .space-github {
+        width: 2em;
+        height: 2em;
+    }
+
     .tools {
         gap: 0.7em;
     }
@@ -404,10 +416,6 @@ nav {
         border-radius: 0.5em;
         background-color: var(--button-txt);
         padding: 0.3em 0.9em;
-    }
-
-    .space-img {
-        min-width: 18em;
     }
 
     .txt {
