@@ -230,7 +230,7 @@ nav {
 .space-img {
     border-radius: 1.5em;
     width: 50%;
-    min-width: 20em;
+    min-width: 10em;
 }
 
 .space-cat-box {
@@ -379,5 +379,42 @@ nav {
     .technologies {
         flex-direction: column;
         gap: 0;
+    }
+
+    .box {
+        padding: 2em;
+        align-items: center;
+        border-radius: 2em;
+    }
+
+    .space-cat-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .tools {
+        gap: 0.7em;
+    }
+
+    .tool {
+        color: var(--button-colour);
+        font-size: .9rem;
+        border-radius: 0.5em;
+        background-color: var(--button-txt);
+        padding: 0.3em 0.9em;
+    }
+
+    .space-img {
+        min-width: 18em;
+    }
+
+    .txt {
+        font-size: 1rem;
+    }
+
+    .sub-head {
+        font-size: 1.5rem;
     }
 }
