@@ -13,7 +13,10 @@
     --button-colour: rgb(209, 194, 255);
     --button-txt: #4C55AD;
     --light-blue: #BED8FF;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -264,7 +267,7 @@ nav {
 
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1000px) {
 
     .menu-toggle .bar {
         width: 2em;
