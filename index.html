@@ -20,9 +20,9 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#about" class="nav-links">About</a></li>
+                <li><a href="#about-title" class="nav-links">About</a></li>
                 <li><a href="#projects" class="nav-links">Projects</a></li>
-                <li><a href="#" class="nav-links last">Contact</a></li>
+                <li><a href="#contact" class="nav-links last">Contact</a></li>
                 <li><a href="#" class="nav-links-btn">Resume</a></li>
             </ul>
         </nav>
@@ -30,7 +30,7 @@
     <div class="gradient">
         <div class="container"> 
             <div class="front-page">
-                <div class="main-txt">
+                <div class="txt-main">
                     <p class="greeting">Hi, my name is</p>
                     <p class="name">Liv Elliott</p>
                     <p class="slogan">I code clean and creative solutions.</p>
@@ -58,14 +58,16 @@
             <div class="container">
                 <section class="about" id="about">
                     <div class="head about-head">
-                        <h1 class="about-title">About Me</h1>
+                        <h1 class="about-title" id="about-title">About Me</h1>
                         <div id="line"></div>
                     </div>
                     <div class="about-box">
-                        <p class="about-txt">My name is Liv (she/her)! Currently, I am in my third 
-                                             year of Computing at Queen’s University, specializing 
-                                             in Software Design.<br><br>In my free time, I enjoy 
-                                             learning and exploring new technologies!</p>
+                        <p class="about-txt">My name is Liv (she/her)! I am in my third 
+                                             year of computing at Queen’s University, specializing 
+                                             in software design. I am currently seeking 12 to 16 
+                                             month software development internships starting in May 2023. 
+                                             <br><br>In my free time, I enjoy learning and exploring new 
+                                             technologies!</p>
                         <img class="head-shot" src="assets/b&w-headshot.png" alt="liv's head shot">
                     </div>
                     <div class="interests">
@@ -107,18 +109,40 @@
         </div>
         <div class="gradient-1">
             <div class="container">
-                <section class="projects">
+                <section class="projects" id="projects">
                     <div class="head project-head">
                         <div id="line"></div>
                         <h1>Projects</h1>
                     </div>
-                    <p>To be updated soon.</p>
+                    <p id="update-msg">Take a look at what I've been working on - updating soon!</p>
                     <div class="p-box p-1">
                         <img id="space-img" src="assets/space-dull.png" alt="Pixel Video Game">
                         <div class="p-txt">
                             <div class="txt-accent">Space Cat. Space Crash.</div>
                             <p>A retro puzzle platformer with hand-drawn game assets.</p>
                             <div class="p-tools">
+                                <a href="https://github.com/livelliott/space-cat-space-crash" target="_blank">
+                                    <svg class="space-github" width="2.5em" height="2.5em" viewbox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M38 0C17.0337 0 0.0526428 17.24 0.0526428 38.5261C0.0526428 56.6317 12.2895 71.6585 28.799 75.8947C28.6084 75.4128 28.5148 74.7373 28.5148 74.0652V67.5141H23.7706C21.2095 67.5141 18.8358 66.3599 17.7926 64.2386C16.5589 61.927 16.3684 58.3629 13.2389 56.1464C12.2895 55.3759 13.0484 54.6054 14.0916 54.7005C16.0842 55.2776 17.6957 56.6284 19.2136 58.6482C20.7315 60.6712 21.3968 61.1532 24.2421 61.1532C25.5694 61.1532 27.6557 61.0581 29.5547 60.7663C30.5979 58.0678 32.3999 55.6612 34.5831 54.507C21.8716 52.966 15.8 46.6084 15.8 37.9392C15.8 34.1817 17.4115 30.6176 20.0695 27.5355C19.2169 24.5485 18.0768 18.3843 20.4506 15.9777C26.1443 15.9777 29.5579 19.7352 30.4105 20.6959C33.2558 19.7319 36.3885 19.1548 39.6116 19.1548C42.9316 19.1548 45.9673 19.7319 48.8126 20.6959C49.6652 19.7319 53.0821 15.9777 58.7726 15.9777C61.0494 18.2892 60.0063 24.5485 59.0568 27.5355C61.7147 30.5225 63.2326 34.1817 63.2326 37.9392C63.2326 46.6084 57.2547 52.966 44.64 54.3136C48.1505 56.1432 50.6179 61.3434 50.6179 65.196V73.9701C50.6179 74.2586 50.5243 74.5471 50.5243 74.8357C65.3221 69.6355 75.9474 55.3825 75.9474 38.5261C75.9474 17.24 58.9663 0 38 0Z"/>
+                                    </svg>
+                                </a>
+                                <div class="tool">C#</div>
+                                <div class="tool">Unity</div>
+                                <div class="tool">Procreate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-box p-1">
+                        <img id="space-img" src="assets/space-dull.png" alt="Pixel Video Game">
+                        <div class="p-txt">
+                            <div class="txt-accent">Insert Project Title Here</div>
+                            <p>Insert project description here.</p>
+                            <div class="p-tools">
+                                <a href="#" target="_blank">
+                                    <svg class="space-github" width="2.5em" height="2.5em" viewbox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M38 0C17.0337 0 0.0526428 17.24 0.0526428 38.5261C0.0526428 56.6317 12.2895 71.6585 28.799 75.8947C28.6084 75.4128 28.5148 74.7373 28.5148 74.0652V67.5141H23.7706C21.2095 67.5141 18.8358 66.3599 17.7926 64.2386C16.5589 61.927 16.3684 58.3629 13.2389 56.1464C12.2895 55.3759 13.0484 54.6054 14.0916 54.7005C16.0842 55.2776 17.6957 56.6284 19.2136 58.6482C20.7315 60.6712 21.3968 61.1532 24.2421 61.1532C25.5694 61.1532 27.6557 61.0581 29.5547 60.7663C30.5979 58.0678 32.3999 55.6612 34.5831 54.507C21.8716 52.966 15.8 46.6084 15.8 37.9392C15.8 34.1817 17.4115 30.6176 20.0695 27.5355C19.2169 24.5485 18.0768 18.3843 20.4506 15.9777C26.1443 15.9777 29.5579 19.7352 30.4105 20.6959C33.2558 19.7319 36.3885 19.1548 39.6116 19.1548C42.9316 19.1548 45.9673 19.7319 48.8126 20.6959C49.6652 19.7319 53.0821 15.9777 58.7726 15.9777C61.0494 18.2892 60.0063 24.5485 59.0568 27.5355C61.7147 30.5225 63.2326 34.1817 63.2326 37.9392C63.2326 46.6084 57.2547 52.966 44.64 54.3136C48.1505 56.1432 50.6179 61.3434 50.6179 65.196V73.9701C50.6179 74.2586 50.5243 74.5471 50.5243 74.8357C65.3221 69.6355 75.9474 55.3825 75.9474 38.5261C75.9474 17.24 58.9663 0 38 0Z"/>
+                                    </svg>
+                                </a>
                                 <div class="tool">C#</div>
                                 <div class="tool">Unity</div>
                                 <div class="tool">Procreate</div>
@@ -130,8 +154,8 @@
         </div>
         <div class="gradient-2">
             <div class="container">
-                <section class="contact">
-                    <h1>Let's Stay in Touch</h1>
+                <section class="contact" id="contact">
+                    <h1 class="head">Let's Stay in Touch</h1>
                     <div class="logos">
                         <a href="mailto: livelliott@icloud.com">
                             <svg class="logo-email" width="5em" height="5em" viewbox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +173,6 @@
                             </svg>
                         </a>
                     </div>
-
                 </section>
             </div>
         </div>
