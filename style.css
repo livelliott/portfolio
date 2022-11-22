@@ -286,8 +286,9 @@ nav {
     padding-bottom: 2em;
 }
 
-#space-img {
+.image {
     width: 40%;
+    height: 100%;
     -webkit-transition: -webkit-filter .5s;
     transition: filter .5s;
 }
@@ -304,7 +305,7 @@ nav {
     background-color: var(--box-grey-hover);
 }
 
-.p-1:hover #space-img {
+.p-1:hover .image {
     -webkit-filter: saturate(250%); 
     filter: saturate(250%);
 }
@@ -319,7 +320,6 @@ nav {
 
 .space-github:hover {
     fill: var(--white);
-    /* transition: all 0.3s ease-out; */
 }
 
 .p-box {
@@ -327,7 +327,7 @@ nav {
     display: flex;
     gap: 2em;
     padding: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .p-box .txt-accent {
