@@ -8,8 +8,6 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
     nav.classList.toggle('no-blur');
     nav.classList.toggle('full-opacity');
-    // contains.classList.toggle('full-blur');
-
 })
 
 

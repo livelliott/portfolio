@@ -8,7 +8,8 @@
 :root {
     --test-colour: purple; 
     --white: rgba(255, 255, 255, 1);
-    --nav-bg-colour: rgba(135, 101, 245, 0.8);
+    --nav-bg-colour: rgba(135, 101, 245, 0.85);
+    --nav-bg-colour-active: rgba(135, 101, 245, 1);
     --backing-colour: rgba(135, 101, 245, 0.35);
     --button-colour: rgb(209, 194, 255);
     --button-txt: #4C55AD;
@@ -16,7 +17,7 @@
     --text-heading: #8875FB;
     --text-heading-hover: #5c4cb6;
     --txt-grey: rgba(11, 11, 12, 0.8);
-    --bg-grey: #F8F8F8;
+    --bg-grey: #f7f7f7;
     --box-grey: rgba(55, 54, 62, 0.3);
     --box-grey-hover: rgba(55, 54, 62, 0.5);
     --txt-light-blue: #8cc2f5;
@@ -142,6 +143,8 @@ nav {
 
 .no-blur {
     backdrop-filter: blur(0px);
+    background-color: var(--nav-bg-colour-active);
+    transition: all 0.5s ease;
 }
 
 .txt-main {
@@ -308,9 +311,12 @@ nav {
     margin-bottom: 1rem;
 }
 
-#update-msg {
-    font-size: 1.3em;
+.projects p {
+    font-size: 1.3rem;
     color: var(--white);
+}
+
+#update-msg {
     padding-bottom: 2em;
 }
 
@@ -364,7 +370,6 @@ nav {
 }
 
 .p-box p {
-    font-size: 1.3rem;
     padding-bottom: 1.2em;
 }
 
@@ -406,6 +411,10 @@ nav {
 
 @media screen and (max-width: 1000px) {
 
+    .container {
+        width: 80%;
+    }
+
     .menu-toggle .bar {
         width: 2em;
         height: 0.2em;
@@ -425,7 +434,7 @@ nav {
         align-items: center;
         justify-content: flex-start;
         line-height: 1em;
-        background-color: var(--nav-bg-colour);
+        background-color: var(--nav-bg-colour-active);
         margin: 0;
         width: 30%;
         height: 120vh;
@@ -436,6 +445,7 @@ nav {
         transition: all 0.5s ease;
         padding-top: 2em;
     }
+
 
     .nav-menu.active {
         right: 0%;
@@ -510,12 +520,56 @@ nav {
         font-size: 2rem;
     }
 
-    
     .about-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    
+    .head {
+        font-size: 2rem;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+
+    .caps {
+        font-size: 1.2rem;
+    }
+
+    .txt-accent {
+        font-size: 1rem;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .about-txt {
+        font-size: 1.1rem;
+    }
+
+    .projects p {
+        font-size: 1.1rem;
+    }
+
+    .p-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .p-box .txt-accent {
+        font-size: 1.5rem;
+
+    }
+
+    .p-tools {
+        flex-wrap: wrap;
     }
 }
 
