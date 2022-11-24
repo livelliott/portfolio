@@ -33,7 +33,7 @@ body{
 
 .gradient { 
     width: 100%;
-    background-image:-webkit-linear-gradient(100deg, #8cc2f5, #7e5bf0);
+    background-image: linear-gradient( #7e5bf0 30%, #8cc2f5);
     background-position: center 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,6 +42,8 @@ body{
     -o-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
+    
+
 }
 
 .gradient-1 { 
@@ -439,7 +441,7 @@ nav {
         width: 30%;
         height: 120vh;
         position: absolute;
-        top: 3.98em;
+        top: 3.85em;
         right: -80%;
         opacity: 0;
         transition: all 0.5s ease;
