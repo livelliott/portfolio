@@ -411,6 +411,32 @@ nav {
     margin-bottom: 1em;
 }
 
+
+@media screen and (max-width: 1600px) {
+    
+    .icons {
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .projects p {
+        font-size: 1.1rem;
+    }
+
+    .p-box {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .p-tools {
+        flex-wrap: wrap;
+    }
+
+}
+
 @media screen and (max-width: 1000px) {
 
     .container {
@@ -543,35 +569,12 @@ nav {
         font-size: 1rem;
     }
 
-    .icons {
-        flex-direction: column;
-        gap: 2em;
-    }
-
     .about-txt {
         font-size: 1.1rem;
     }
 
-    .projects p {
-        font-size: 1.1rem;
-    }
-
-    .p-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image {
-        width: 100%;
-    }
-
     .p-box .txt-accent {
         font-size: 1.5rem;
-
-    }
-
-    .p-tools {
-        flex-wrap: wrap;
     }
 }
 
