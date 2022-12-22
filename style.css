@@ -379,6 +379,7 @@ nav {
     display: flex;
     gap: 1em;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tool {
@@ -412,7 +413,7 @@ nav {
 }
 
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1300px) {
     
     .icons {
         flex-direction: column;
